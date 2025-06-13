@@ -1,1 +1,20 @@
+<<<<<<< HEAD
+portfolio-website
+├── src
+│   ├── css
+│   │   ├── style.css
+│   │   └── reset.css
+│   ├── js
+│   │   └── main.js
+│   └── pages
+│       ├── index.html
+│       ├── about.html
+│       ├── projects.html
+│       ├── skills.html
+│       └── contact.html
+├── assets
+│   └── fonts
+└── README.md
+=======
 This file is intentionally left blank.
+>>>>>>> 96c149d37dea715bdf6bcc1535e3db9050dc6450
