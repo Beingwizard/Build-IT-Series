@@ -1,0 +1,118 @@
+/* Custom styles for the Student Portfolio Website */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    line-height: 1.7;
+    background: linear-gradient(120deg, #f4f4f4 60%, #e3f0ff 100%);
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Navigation styles */
+nav {
+    background: transparent;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #ffd700;
+}
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 0 0 30px 0;
+    background: linear-gradient(90deg, #007bff 60%, #6c63ff 100%);
+    color: white;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+/* Section styles */
+section {
+    padding: 32px 0;
+    margin: 32px 0;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.3s;
+}
+section:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+
+/* Project styles */
+.project {
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 24px 0 8px 0;
+    background: linear-gradient(90deg, #007bff 60%, #6c63ff 100%);
+    color: #fff;
+    border-radius: 30px 30px 0 0;
+    margin-top: 40px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    section {
+        padding: 16px 0;
+        margin: 16px 0;
+    }
+    header {
+        padding-bottom: 16px;
+    }
+    footer {
+        padding: 16px 0 4px 0;
+    }
+}
+/* Fade-in animation for .fade-in elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s cubic-bezier(.77,0,.18,1), transform 1s cubic-bezier(.77,0,.18,1);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
