@@ -1,0 +1,426 @@
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #86868b;
+    --accent-color: #6e3bff;
+    --accent-hover: #845dff;
+    --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.apple-hero {
+    min-height: 80vh;  /* Reduced from 100vh */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+    padding: 2rem 0;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--accent-color), var(--accent-hover));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Sections */
+.apple-section {
+    padding: 3rem 0;  /* Reduced from 6rem to 3rem */
+    background-color: var(--bg-primary);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;  /* Reduced from 3rem to 2rem */
+    background: linear-gradient(45deg, var(--accent-color), var(--accent-hover));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Consistent container padding */
+.container {
+    max-width: 1140px;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+/* Cards */
+.project-card, .mega-card, .experience-card, .education-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 1.5rem;  /* Consistent padding */
+    margin-bottom: 1.5rem;  /* Consistent margin */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover, .experience-card:hover, .education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Project Cards */
+.project-card {
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(110, 59, 255, 0.1);
+}
+
+.project-title {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tech {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-badge {
+    background: rgba(110, 59, 255, 0.1);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(110, 59, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.tech-badge i {
+    color: var(--accent-color);
+}
+
+.project-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-highlights {
+    background: rgba(110, 59, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.project-highlights .custom-list {
+    margin: 0;
+}
+
+.project-highlights .custom-list li {
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+}
+
+.project-highlights .custom-list li:last-child {
+    margin-bottom: 0;
+}
+
+.project-highlights i {
+    color: var(--accent-color);
+}
+
+/* Skills */
+.skill-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-link {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 1rem 0;  /* Reduced padding */
+}
+
+.experience-card {
+    margin-bottom: 1.5rem;  /* Consistent spacing */
+    position: relative;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--accent-color);
+}
+
+/* Additional Information */
+.interests li, .certifications li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Contact Section */
+.contact-info a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.apple-footer {
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+/* Badges */
+.badge {
+    background: var(--accent-color);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Mega Card for Skills and Info */
+.mega-card {
+    background: var(--card-bg);
+    border-radius: 25px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.border-end {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Section Titles */
+.subsection-title {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Skill Groups */
+.skill-group {
+    margin-bottom: 1.5rem;  /* Reduced from 2rem/2.5rem */
+}
+
+.skill-group h4 {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Skill Badges */
+.skill-badges, .language-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-badge {
+    background: rgba(110, 59, 255, 0.1);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(110, 59, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-badge i {
+    color: var(--accent-color);
+}
+
+.skill-badge:hover {
+    background: rgba(110, 59, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.lang-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Custom Lists */
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.custom-list li i {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+/* Info Groups */
+.info-group {
+    margin-bottom: 1.5rem;  /* Reduced from 2rem/2.5rem */
+}
+
+.additional-info {
+    padding-left: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .apple-section {
+        padding: 2rem 0;  /* Even more compact on mobile */
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-card, .mega-card, .experience-card, .education-card {
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .border-end {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .additional-info {
+        padding-left: 0;
+    }
+
+    .skill-badges, .language-badges {
+        gap: 0.5rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+    
+    .project-tech {
+        gap: 0.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Hover Effects */
+.info-group:hover .subsection-title {
+    color: var(--accent-hover);
+}
+
+/* Animation for badges */
+.skill-badge, .lang-badge {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.project-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
