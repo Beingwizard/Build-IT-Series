@@ -1,0 +1,71 @@
+/portfolio-website/portfolio-website/css/responsive.css
+
+/* Responsive styles for the portfolio website */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .project {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .project {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .project img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project {
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .project img {
+        width: 40%;
+        height: auto;
+    }
+}
