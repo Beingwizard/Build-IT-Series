@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepan Sai | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #0f172a;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deepan Sai</h1>
+    <p>Student | Developer | ML Enthusiast | Future Founder</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Deepan Sai, a passionate tech enthusiast who started coding in 8th grade. I’m into full-stack development and machine learning, aiming to study at ETH Zurich or MIT. I recently joined VIT Chennai and enjoy building cool stuff with Python. Outside of tech, I play the guitar, basketball, and love reading.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills & Technologies</h2>
+    <ul>
+      <li>Python, HTML, CSS, JavaScript (basics)</li>
+      <li>MySQL, Git & GitHub</li>
+      <li>CustomTkinter, OpenCV, yfinance, sklearn, Pillow</li>
+      <li>Currently learning: Node.js, Express, MongoDB, React</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Stock Market Predictor</strong> – <a href="https://github.com/Sai-Deepan/StockMarket_predictor" target="_blank">View Project</a></li>
+      <li><strong>Farm Aid Crop Price Detector</strong> – <a href="https://github.com/32-Degrees/Farm-Aid" target="_blank">View Project</a></li>
+      <li><strong>Hospital DBMS</strong> – <a href="https://github.com/13-Days/Hospital-DBMS" target="_blank">View Project</a></li>
+      <li><strong>AI Study Tracker</strong> – In Progress</li>
+    </ul>
+  </section>
+
+  <section class="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1NnA8-VIVVhMLyKwH0-QMg8RrjzVUqTCp/view">AI Aware Program – Intel & Govt of India</a></li>
+      <li><a href="https://drive.google.com/file/d/1MPU2dTf8S_cUvO2xWp-VfK7FF6zbrQoy/view">Python for Beginners – Udemy</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1oQQpCEB5nvOThxL62rZ8P_vJdrcT7YEk">VIVO Ignite – IIT Madras</a></li>
+      <li><a href="https://drive.google.com/file/d/1fd6jiyZ3UVJ6WYJexOsIFks5Cfq1_lYH/view">Cyber Safety – NCERT</a></li>
+    </ul>
+  </section>
+
+  <section class="achievements">
+    <h2>Achievements & Hackathons</h2>
+    <ul>
+      <li>Special Prize – State Level Hackathon (Jeppiaar Institute)</li>
+      <li>National Level – Aryabhatta Ganit Challenge</li>
+      <li>Selected – Junior Hackathon @ RMK Expo</li>
+      <li>Completed – VIBE Coding Program</li>
+    </ul>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <p><strong>VIT Chennai</strong> – B.Tech (CSE or AI/ML) – 2025–2029</p>
+    <p><strong>High School (CBSE)</strong> – Scored 450/500</p>
+  </section>
+
+  <footer>
+    <p>Connect with me on <a href="https://github.com/Sai-Deepan" target="_blank">GitHub</a> | Email: saideepan@example.com</p>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
