@@ -1,52 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhanush Adithyan | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">DA.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <section id="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my work and skills in technology.</p>
-        </section>
+  <!-- Hero -->
+  <section id="hero" class="vh-100 d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3">Hi, I'm Dhanush</h1>
+      <p class="lead" id="typed-text">A Developer. A Learner. An Innovator.</p>
+    </div>
+  </section>
 
-        <section id="introduction">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself and your journey in the tech world.</p>
-        </section>
+  <!-- About -->
+  <section id="about" class="container py-5">
+    <h2 class="section-heading">About Me</h2>
+    <p class="fs-5">I am a passionate student developer who loves to craft clean and modern web applications. I have experience in HTML, CSS, Bootstrap, and JavaScript. I enjoy building creative, responsive, and user-friendly interfaces.</p>
+  </section>
 
-        <section id="skills-preview">
-            <h2>My Skills</h2>
-            <p>A quick overview of the technologies I work with.</p>
-        </section>
+  <!-- Projects -->
+  <section id="projects" class="container py-5">
+    <h2 class="section-heading">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm">
+          <img src="https://source.unsplash.com/400x300/?website,code" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Site</h5>
+            <p class="card-text">A clean and minimal personal portfolio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm">
+          <img src="https://source.unsplash.com/400x300/?app,design" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Task Manager</h5>
+            <p class="card-text">A simple to-do app to manage daily tasks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm">
+          <img src="https://source.unsplash.com/400x300/?blog,writing" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Blog Template</h5>
+            <p class="card-text">A responsive blog site for my tech articles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="projects-preview">
-            <h2>Featured Projects</h2>
-            <p>Highlight some of your key projects with links to more details.</p>
-        </section>
-    </main>
+  <!-- Contact -->
+  <section id="contact" class="container py-5">
+    <h2 class="section-heading">Contact</h2>
+    <p class="fs-5">Have an opportunity or just want to connect? Drop me a message!</p>
+    <a href="mailto:dhanush@example.com" class="btn btn-outline-light">Email Me</a>
+  </section>
 
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    &copy; 2025 Dhanush Adithyan
+  </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
