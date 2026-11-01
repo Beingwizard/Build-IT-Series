@@ -56,32 +56,6 @@ With the power of **GitHub Copilot**, participants will build their **own develo
 
 ---
 
-## 👥 Mentor List  
-| Name | LinkedIn | City | Mentor/Proctor |  
-|------|---------|------|--------|  
-| Priya Kutwal | [LinkedIn Profile](https://www.linkedin.com/in/priyakutwal/) | Pune | Proctor |  
-| Ashish Ujjwal | [LinkedIn Profile](https://www.linkedin.com/in/ashish-ujjwal-a9bb03228/) | Lucknow | Proctor |  
-| Ashok Vishwakarma | [LinkedIn Profile](https://linkedin.com/in/avishwakarmadev) | Delhi NCR | Mentor |  
-| Prarthana Bhat | [LinkedIn Profile](https://www.linkedin.com/in/prarthana-bhat-4a8158129/) | Bengaluru | Proctor |  
-| Pranav Agarwal | [LinkedIn Profile](https://www.linkedin.com/in/pranav-agr/) | Delhi | Proctor |  
-| Mohit | [LinkedIn Profile](https://www.linkedin.com/in/mohit-frontend-developer/) | Bengaluru | Proctor |  
-| Krishi Shah | [LinkedIn Profile](https://www.linkedin.com/in/krishishah1211) | Mumbai | Proctor |  
-| Vipul Jain | [LinkedIn Profile](https://www.linkedin.com/in/vipul0309/) | Bangalore | Mentor |  
-| S Ravi Kumar | [LinkedIn Profile](https://www.linkedin.com/in/techierathore/) | Greater Noida | Mentor |  
-| Aman Kumar | [LinkedIn Profile](https://www.linkedin.com/in/aman-kumar-51089120b) | Gurugram | Proctor |  
-| Neel Shah | [LinkedIn Profile](https://www.linkedin.com/in/neelcshah/) | Ahmedabad | Mentor |  
-| Sunil Kumar | [LinkedIn Profile](https://www.linkedin.com/in/sunilkumardigi/) | Bangalore | Mentor |  
-| Haribabu Vallapuri | [LinkedIn Profile](https://www.linkedin.com/in/haribabu-vallapuri-380a975/) | Bengaluru | Mentor |  
-*(More mentors will be added as we finalize the lineup.)*
-
----
-
-## ⏳ Format of the 4-Hour Coding Sprint
-- **3 Hours:** Hands-on coding session (building a portfolio website using GitHub Copilot)
-- **1 Hour:** Debugging, discussions, final touches, and showcasing outcomes
-
----
-
 ## 🎁 What We'll Provide to Participants
 - **Step-by-step guidance** from experienced mentors
 - **GitHub Copilot access & setup help** ([Set up GitHub Copilot](https://github.com/features/copilot))
@@ -108,9 +82,6 @@ With the power of **GitHub Copilot**, participants will build their **own develo
 
 ## 🌍 Do You Want to Organize This in Your City/College?
 Fill this form: [Organize Build Tour](https://forms.office.com/r/YSSPyEi9j5)
-
-## 🏆 Want to Join as a Mentor or Proctor?
-Fill out this **form**: [Mentor/Proctor Application](https://forms.office.com/r/85PxabA70q)
 
 ---
 
