@@ -1,0 +1,53 @@
+/* Custom Bootstrap styles for the Student Portfolio Website */
+
+/* Override default Bootstrap button styles */
+.btn-custom {
+    background-color: #007bff; /* Custom primary color */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Customizing Bootstrap card styles */
+.card-custom {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Customizing Bootstrap navbar */
+.navbar-custom {
+    background-color: #343a40; /* Dark background */
+}
+
+.navbar-custom .nav-link {
+    color: white; /* White text for links */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107; /* Highlight color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-custom {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Add custom animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
